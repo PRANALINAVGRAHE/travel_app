@@ -19,7 +19,7 @@ const Features = () => {
              text-align-right mt-4">Our Features</h2>
                 </div>
 
-                <ul className="mt-10 grid gap-5 md:grid-cols-2 lg:mg-10 lg:gap-10">
+                <ul className="mt-10 grid gap-5 md:grid-cols-2 lg:mg-1y nextjs project forfree0 lg:gap-10">
                   {FEATURES.map((feature) => (
                     <FeatureItem 
                       key={feature.title}

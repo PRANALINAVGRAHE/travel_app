@@ -2,13 +2,15 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const { basePath } = useRouter();
   return (
     <div className="max-w-[1440px] mx-auto px-10">
         <nav className="flexBetween max-container padding-container relative z-30 py-5">
             <Link href="/" >
-            <Image src="/hilink-logo.svg" alt="logo" width={74} height={29}/>
+            <Image src={`${basePath}/public/hilink-logo.svg`} alt="logo" width={74} height={29}/>
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
